@@ -118,7 +118,8 @@ class _ProductPageState extends State<ProductPage> {
                           '${_productController.selectedSize} adicionada(s) à sacola!',
                         ),
                         behavior: SnackBarBehavior.floating,
-                        duration: const Duration(seconds: 2),
+                        duration: const Duration(seconds: 4),
+                        persist: false,
                         action: SnackBarAction(
                           label: 'DESFAZER',
                           onPressed: () {
