@@ -25,4 +25,8 @@ class ProductController {
       quantity--;
     }
   }
+
+  void resetQuantity() {
+    quantity = 0;
+  }
 }

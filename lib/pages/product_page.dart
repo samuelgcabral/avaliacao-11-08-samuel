@@ -119,6 +119,14 @@ class _ProductPageState extends State<ProductPage> {
                         ),
                         behavior: SnackBarBehavior.floating,
                         duration: const Duration(seconds: 2),
+                        action: SnackBarAction(
+                          label: 'DESFAZER',
+                          onPressed: () {
+                            setState(() {
+                              _productController.resetQuantity();
+                            });
+                          },
+                        ),
                       ),
                     );
                   },
